@@ -1,4 +1,5 @@
 <?
+var_dump($item);
 $name = $item['name1'];
 $deck = $item['deck'];
 $body = $item['body'];
@@ -39,22 +40,3 @@ $body = preg_replace($find, $replace, $body);
         ?></div>
     </div>
 </section>
-
-<script type="text/javascript" src="/static/js/screenfull.min.js"></script>	
-<script type="text/javascript" src="/static/js/windowfull.js"></script>	
-<script>
-    var imgs = document.querySelectorAll('img,video');
-	var i;
-	var index;
-	for (i = 0; i < imgs.length; i++) {
-		if (screenfull.isEnabled) {
-    		imgs[i].addEventListener('click', function () {
-                screenfull.toggle(this);
-    		}, false);
-		} else {
-    		imgs[i].addEventListener('click', function () {
-                windowfull.toggle(this);
-    		}, false);
-        }
-	}
-</script>
